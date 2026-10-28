@@ -1,0 +1,26 @@
+# Binaries
+mqtt-proxy
+mqtt-proxy.exe
+/dist
+/release
+
+# Runtime data
+/data/
+*.db
+*.db-wal
+*.db-shm
+# 引导页生成的配置含明文密码与 JWT 密钥，不入库
+config.conf
+# 运行日志
+server.log
+server.log.*
+
+# Frontend
+admin/node_modules/
+# keep the placeholder so `go build` works before the console is compiled
+admin/dist/*
+!admin/dist/index.html
+
+# IDE
+.idea/
+.vscode/
